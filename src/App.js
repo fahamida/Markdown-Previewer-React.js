@@ -58,7 +58,7 @@ class App extends Component {
   </Row>
 </Grid>
       <div className="space">
-      <h6> This is a GitHub-flavored Markdown Previewer with React.js.</h6>
+      <h6> This is a GitHub-flavored Markdown Previewer with React.js by <a href="http://www.fahamida.com" target="blank">Fahamida</a>.</h6>
       <h6> The syntax guidelines can be found at <a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a>.</h6>
       </div>
       </div>
