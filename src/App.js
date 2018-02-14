@@ -28,32 +28,24 @@ class App extends Component {
       <Grid>
       <Row className="show-grid">
     <Col xs={6} md={6}>
-      <code>      
       <h1 className="title">Text Editor</h1>  
-      </code>
     </Col>
     <Col xs={6} md={6}>
-      <code>  
         <h1 className="title">Output</h1>    
-      </code>
     </Col>
   </Row>
   <Row className="show-grid">
     <Col xs={6} md={6}>
-      <code>      
         <div>
     <FormGroup controlId="FormControlsTextArea">
-    <ControlLabel></ControlLabel>
-    
+    <ControlLabel></ControlLabel>    
     <FormControl componentClass="textarea" style={{ height: 300 }} placeholder="Type Here" value={markdown} onChange={(event)=>this.updateMarkdown(event.target.value)}></FormControl>
     </FormGroup>
       </div>
-      </code>
+
     </Col>
-    <Col xs={6} md={6}>
-      <code>    
-      <div style={{ color: "rgb(51, 51, 63)" }} dangerouslySetInnerHTML={{__html:marked(markdown)}}></div>
-      </code>
+    <Col xs={6} md={6}> 
+      <div className="space1" dangerouslySetInnerHTML={{__html:marked(markdown)}}></div>
     </Col>
   </Row>
 </Grid>
